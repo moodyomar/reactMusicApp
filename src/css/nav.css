@@ -1,0 +1,46 @@
+header .burger {
+  display: none;
+}
+.nav_top{
+background-color: rgb(18, 17, 17);
+height: 60px;
+position: fixed;
+/* top: 0; */
+z-index: 10;
+}
+
+header a {
+  color:rgb(252, 252, 252);
+  padding: 0 12px;
+  text-decoration: none;
+}
+
+
+@media (max-width:991px){
+  header .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  header nav { 
+    position: absolute;
+    right:0;
+    top:60px;
+    width:70% !important;
+    background: rgb(18, 17, 17);
+    padding:0 !important;
+    display: none;
+    
+  }
+
+  header nav a{
+    display: block;
+    padding:8px;
+    text-align: center;
+    border-bottom: 2px solid #333; 
+  }
+  header nav a:hover{
+    background: #333;
+    color:white;
+  }
+}

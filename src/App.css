@@ -1,0 +1,49 @@
+body{
+  background-color: #000;
+  color: #fff;
+}
+
+.hero{
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+
+}
+.txtShadow{
+  text-shadow: 5px 5px 6px rgba(150, 150, 150, 1);
+}
+aside{
+  display: none;
+}
+
+main{
+  position: absolute;
+padding: 20px;
+/* 60px the heigh of topNav + 20px match main padding = 80 */
+padding-top: 80px;
+}
+
+.song{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px){
+  main{
+    position: absolute;
+    width: 80vw;
+    left: 20vw;
+  padding: 20px;
+  /* 60px the heigh of topNav + 20px match main padding = 80 */
+  padding-top: 80px;
+  }
+
+  aside{
+    display: block;
+    /* background-color: rgba(255, 0, 0, 0.37); */
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    top: 60px;
+  }
+}

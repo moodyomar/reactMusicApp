@@ -1,0 +1,37 @@
+.sideNav{
+  width: 20vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.133);
+  position: fixed;
+}
+.navLinks{
+  list-style-type: none;
+  padding: 0;
+}
+.navLinks li{
+  border-bottom: 1px solid #fff;
+  padding: 12px;
+  text-align: center;
+}
+.navLinks li:hover{
+background-color: rgba(255, 247, 0, 0.284);
+}
+.controls{
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: rgb(81, 196, 23); */
+  align-items: flex-end;
+}
+.player{
+    height: 70vh;
+display: grid;
+}
+.hoverable:hover{
+  color: #EB5E27;
+transform: scale(1.15);
+transition: all .3s ease-in;
+cursor: pointer;
+}
+.hoverable{
+  transition: all .25s ease-out;
+}
