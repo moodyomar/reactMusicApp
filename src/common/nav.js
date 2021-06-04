@@ -6,10 +6,6 @@ function Nav(props) {
 
   let [showMobileNav, setShowMobileNav] = useState(false);
 
-  const hideNavMobile = () => {
-    setShowMobileNav(false);
-  }
-
   return (
     <div className="container-fluid shadow nav_top">
       <div className="row align-items-center">
