@@ -4,9 +4,10 @@ import '../css/popUp.css'
 function SongPopUp(props){
   let artistImage = props.item.artist.picture_medium
   return(
-    <div className="outterPopUp" onClick={props.songPopUp}>
+    <div className="outterPopUp" >
       <div className="innerPopUp">
         <div className="content">
+          <div className="close" onClick={props.songPopUp}>X</div>
           <div className="img" style={{backgroundImage:`url(${artistImage})`}}></div>
           <h2>{props.item.title}</h2>
           <audio controls>

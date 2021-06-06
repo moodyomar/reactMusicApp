@@ -34,7 +34,7 @@ let [searchQ,setSearchQ] = useState("eminem");
       <SearchHeader searchQ={setSearchQ} />
       {songs_ar.map((item) => {
         return(
-          <div className="col-lg-4"  key={item.id}>
+          <div className="col-md-4"  key={item.id}>
 
             <Songs item={item}/>
    </div>

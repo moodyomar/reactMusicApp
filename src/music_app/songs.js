@@ -9,11 +9,11 @@ function Songs(props) {
   }
 
   return (
-    <div className="col-lg-6 song" onClick={songPopUp}>
+    <div className="d-flex justify-content-center " >
       { popUp &&
         <SongPopUp item={props.item} songPopUp={songPopUp} />
       }
-      <div className="card center songCard p-2 my-2">
+      <div className="card center songCard p-2 my-2 song" onClick={songPopUp}>
         <img src={props.item.album.cover_medium} alt="" className="imgClass" />
         <div className="moare">
           <h3>{props.item.artist.name} <br />- <br /> <small>{props.item.title}</small></h3>

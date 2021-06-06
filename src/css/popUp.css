@@ -33,18 +33,45 @@
     padding-top: 25px;
     width: 35vw;
     height: 40vh;
-    background-color: rgb(89, 86, 86);
+    background-color: rgba(89, 86, 86, 0.537);
     border-radius: 25px;
     display: flex;
     justify-content: center;
     
     }
+    audio{
+      opacity: 0.65;
+    }
+    audio:hover{
+      opacity: 1;
+    }
+    .close:hover{
+      opacity: 1;
+    }
+    .close{
+      opacity: 0.6;
+      font-size: 1.2em;
+ position: absolute;
+ color: red;
+ cursor: pointer;
+ width: 30px;
+ right: 35vw;
+ height: 30px;
+ background-color: #fff;
+ border-radius: 15px;
 
+    }
 @media screen and (max-width: 992px) {
 
     .innerPopUp{
     width: 85vw;
     height: 40vh;
     }
-   
+   .close{
+width: 30px;
+height: 30px;
+background-color: #fff;
+border-radius: 15px;
+right: 15vw;
+   }
 }
